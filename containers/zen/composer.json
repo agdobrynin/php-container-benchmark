@@ -1,0 +1,15 @@
+{
+  "require": {
+    "woohoolabs/zen": "^3.0"
+  },
+  "autoload": {
+    "classmap": [
+      "CompilerConfig.php",
+      "ContainerConfig.php"
+    ],
+    "psr-4": {
+      "Zen\\": "src/",
+      "Project\\": "../../src/"
+    }
+  }
+}

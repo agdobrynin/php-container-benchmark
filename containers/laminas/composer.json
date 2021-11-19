@@ -1,0 +1,6 @@
+{
+  "require": {
+    "laminas/laminas-servicemanager": "^3.10",
+    "bluepsyduck/laminas-autowire-factory": "^1.1"
+  }
+}

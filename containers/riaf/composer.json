@@ -1,0 +1,14 @@
+{
+  "require": {
+    "l3tum/riaf-core": "^1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Project\\": "../../src/",
+      "Riaf\\": "src/"
+    },
+    "classmap": [
+      "Config.php"
+    ]
+  }
+}

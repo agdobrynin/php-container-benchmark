@@ -1,0 +1,50 @@
+{
+  "$schema": "./vendor/phpbench/phpbench/phpbench.schema.json",
+  "runner.bootstrap": "./benchmark/bootstrap.php",
+  "runner.file_pattern": "*Bench.php",
+  "report.generators": {
+    "all": {
+      "generator": "composite",
+      "reports": [
+        "env",
+        "aggregate",
+        "custom"
+      ]
+    },
+    "custom": {
+      "title": "Container comparison",
+      "description": "",
+      "generator": "component",
+      "components": [
+        {
+          "component": "section",
+          "filter": "subject_name = 'benchHasser'",
+          "title": "HAS",
+          "components": [
+            {
+              "component": "bar_chart_aggregate",
+              "x_partition": "variant_name",
+              "bar_partition": "benchmark_name",
+              "y_expr": "mode(partition['result_time_avg']) as time",
+              "y_axes_label": "yValue as time"
+            }
+          ]
+        },
+        {
+          "component": "section",
+          "filter": "subject_name = 'benchGetter'",
+          "title": "GET",
+          "components": [
+            {
+              "component": "bar_chart_aggregate",
+              "x_partition": "variant_name",
+              "bar_partition": "benchmark_name",
+              "y_expr": "max([mode(partition['result_time_avg']) - 22, 0]) as time",
+              "y_axes_label": "yValue as time"
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

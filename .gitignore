@@ -1,0 +1,9 @@
+**/vendor
+**/Generated
+caches
+containers/riaf/src/Container.php
+containers/zen/src/Container.php
+containers/symfony/src/SymfonyContainer.php
+containers/php-di/src/CompiledContainer.php
+.idea
+/containers/laminas/src/autowire.cache.php
