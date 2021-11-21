@@ -67,6 +67,10 @@ benchmark-compiled:
 benchmark-match:
 	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=all --group=Match
 
+.PHONY: benchmark-misc
+benchmark-misc:
+	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=all --group=Misc
+
 containers/riaf/src/Container.php:
 	cd containers/riaf && composer dump-autoload
 	cd containers/riaf && php vendor/bin/compile "\\Config"

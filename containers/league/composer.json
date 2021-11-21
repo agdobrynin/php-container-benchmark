@@ -1,5 +1,10 @@
 {
   "require": {
     "league/container": "^4.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "Project\\": "../../src/"
+    }
   }
 }

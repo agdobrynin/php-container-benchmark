@@ -2,5 +2,10 @@
   "require": {
     "yiisoft/definitions": "3.0.x-dev",
     "yiisoft/di": "3.0.x-dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "Project\\": "../../src/"
+    }
   }
 }

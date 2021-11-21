@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "l3tum/riaf-core",
-            "version": "v1.0.22",
+            "version": "v1.0.24",
             "source": {
                 "type": "git",
                 "url": "https://github.com/L3tum/RiafCore.git",
-                "reference": "a974b34df2887ef488fc4b47232c422663a32500"
+                "reference": "3937c27402675423b7dec4f5cb5cc79ba5ef5a33"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/L3tum/RiafCore/zipball/a974b34df2887ef488fc4b47232c422663a32500",
-                "reference": "a974b34df2887ef488fc4b47232c422663a32500",
+                "url": "https://api.github.com/repos/L3tum/RiafCore/zipball/3937c27402675423b7dec4f5cb5cc79ba5ef5a33",
+                "reference": "3937c27402675423b7dec4f5cb5cc79ba5ef5a33",
                 "shasum": ""
             },
             "require": {
@@ -63,9 +63,9 @@
             "description": "Good framework",
             "support": {
                 "issues": "https://github.com/L3tum/RiafCore/issues",
-                "source": "https://github.com/L3tum/RiafCore/tree/v1.0.22"
+                "source": "https://github.com/L3tum/RiafCore/tree/v1.0.24"
             },
-            "time": "2021-11-16T19:02:01+00:00"
+            "time": "2021-11-21T13:34:19+00:00"
         },
         {
             "name": "nyholm/psr7-server",
