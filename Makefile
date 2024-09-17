@@ -22,6 +22,7 @@ clean:
 	rm -rf containers/yii/vendor
 	rm -rf containers/zen/vendor
 	rm -rf containers/zen/src/Container.php
+	rm -rf containers/kaspi-di/vendor
 
 vendor:
 	composer install
@@ -32,6 +33,7 @@ vendor:
 	cd containers/laminas && composer install
 	cd containers/yii && composer install
 	cd containers/zen && composer install
+	cd containers/kaspi-di && composer install
 
 .PHONY: autoloader
 autoloader:
@@ -46,6 +48,7 @@ integration-autoloaders:
 	cd containers/laminas && composer dump-autoload -o -a
 	cd containers/yii && composer dump-autoload -o -a
 	cd containers/zen && composer dump-autoload -o -a
+	cd containers/kaspi-di && composer dump-autoload -o -a
 
 .PHONY: benchmark
 benchmark:
@@ -118,3 +121,7 @@ update-yii:
 .PHONY: update-zen
 update-zen:
 	cd containers/zen && composer update
+
+.PHONY: update-kaspi-di
+update-kaspi-di:
+	cd containers/kaspi-di && composer update
