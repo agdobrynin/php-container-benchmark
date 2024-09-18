@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "81901f2d17f7b1936219fab72e59851d",
+    "content-hash": "e548528ef9cbb8f6316a108ab176a156",
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v1.5.0",
+            "version": "dev-refactor/optimization",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "97fe9b696356985371f66d6ea997d06237589285"
+                "reference": "353a3e184d1b296a1acef2006bf149e42b383522"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/97fe9b696356985371f66d6ea997d06237589285",
-                "reference": "97fe9b696356985371f66d6ea997d06237589285",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/353a3e184d1b296a1acef2006bf149e42b383522",
+                "reference": "353a3e184d1b296a1acef2006bf149e42b383522",
                 "shasum": ""
             },
             "require": {
@@ -56,9 +56,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/v1.5.0"
+                "source": "https://github.com/agdobrynin/di-container/tree/refactor/optimization"
             },
-            "time": "2024-09-17T08:00:07+00:00"
+            "time": "2024-09-18T10:31:11+00:00"
         },
         {
             "name": "psr/container",
@@ -117,7 +117,9 @@
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
-    "stability-flags": [],
+    "stability-flags": {
+        "kaspi/di-container": 20
+    },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": [],
