@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "353a3e184d1b296a1acef2006bf149e42b383522"
+                "reference": "9be996f0e30fae090e47a166ea2c5d8a3de1581c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/353a3e184d1b296a1acef2006bf149e42b383522",
-                "reference": "353a3e184d1b296a1acef2006bf149e42b383522",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/9be996f0e30fae090e47a166ea2c5d8a3de1581c",
+                "reference": "9be996f0e30fae090e47a166ea2c5d8a3de1581c",
                 "shasum": ""
             },
             "require": {
@@ -58,7 +58,7 @@
                 "issues": "https://github.com/agdobrynin/di-container/issues",
                 "source": "https://github.com/agdobrynin/di-container/tree/refactor/optimization"
             },
-            "time": "2024-09-18T10:31:11+00:00"
+            "time": "2024-09-18T14:55:08+00:00"
         },
         {
             "name": "psr/container",
