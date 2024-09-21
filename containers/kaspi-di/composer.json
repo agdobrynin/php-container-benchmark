@@ -1,6 +1,6 @@
 {
     "require": {
-        "kaspi/di-container": "dev-refactor/optimization"
+        "kaspi/di-container": "dev-main"
     },
     "autoload": {
         "psr-4": {

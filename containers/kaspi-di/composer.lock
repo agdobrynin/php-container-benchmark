@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "e548528ef9cbb8f6316a108ab176a156",
+    "content-hash": "604bdfc4dcf38e755a73e904f741af12",
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "dev-refactor/optimization",
+            "version": "dev-main",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "9be996f0e30fae090e47a166ea2c5d8a3de1581c"
+                "reference": "cefc7583cc60940b9eb7575fd5cf9ce93f60ced4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/9be996f0e30fae090e47a166ea2c5d8a3de1581c",
-                "reference": "9be996f0e30fae090e47a166ea2c5d8a3de1581c",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/cefc7583cc60940b9eb7575fd5cf9ce93f60ced4",
+                "reference": "cefc7583cc60940b9eb7575fd5cf9ce93f60ced4",
                 "shasum": ""
             },
             "require": {
@@ -29,6 +29,7 @@
                 "phan/phan": "^5.4",
                 "phpunit/phpunit": "^9.6"
             },
+            "default-branch": true,
             "type": "library",
             "autoload": {
                 "psr-4": {
@@ -56,9 +57,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/refactor/optimization"
+                "source": "https://github.com/agdobrynin/di-container/tree/v1.6.0"
             },
-            "time": "2024-09-18T14:55:08+00:00"
+            "time": "2024-09-21T09:47:53+00:00"
         },
         {
             "name": "psr/container",
