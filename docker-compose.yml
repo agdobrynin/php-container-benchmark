@@ -1,0 +1,7 @@
+services:
+    php:
+        container_name: benchmark
+        build:
+            dockerfile: Dockerfile
+        volumes:
+            - '.:/var/www'

@@ -1,8 +1,9 @@
 FROM composer:2
 FROM php:8.0-cli as base
 WORKDIR /var/www
-ENTRYPOINT ["make"]
-CMD ["benchmark"]
+
+ENV UID=1000
+ENV GID=1000
 
 # Setup to install stuff
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
