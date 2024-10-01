@@ -18,6 +18,11 @@ Run interactive shell
 ```shell
 docker-compose run --rm -it php bash
 ```
+Run test "benchmark-table"
+```shell
+docker-compose run --rm -it php make benchmark-table
+```
+
 ### Local
 
 Requirements:
