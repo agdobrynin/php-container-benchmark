@@ -12,9 +12,12 @@ You can run these benchmarks yourself in two ways:
 
 In order to run it in a reproducible environment, build and run the docker image with
 ````shell
-docker build -t containerbenchmark:local --build-arg SERVICES=100 .
-docker run --rm -it containerbenchmark:local benchmark-table
+docker-compose build --build-arg SERVICES=100
 ````
+Run interactive shell
+```shell
+docker-compose run --rm -it php bash
+```
 ### Local
 
 Requirements:
