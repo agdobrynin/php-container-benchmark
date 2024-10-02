@@ -24,6 +24,3 @@ USER dockeruser
 ARG SERVICES=100
 ENV SERVICES=${SERVICES}
 ENV APP_ENV=prod
-
-RUN make prepare
-
