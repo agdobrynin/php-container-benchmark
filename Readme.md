@@ -15,9 +15,9 @@ In order to run it in a reproducible environment, build and run the docker image
 docker-compose build
 ````
 
-Run test "benchmark-table"
+Run test
 ```shell
-docker-compose run --rm -it php make benchmark-table
+docker-compose run --rm -it php make
 ```
 
 Run interactive shell
