@@ -14,13 +14,15 @@ In order to run it in a reproducible environment, build and run the docker image
 ````shell
 docker-compose build --build-arg SERVICES=100
 ````
-Run interactive shell
-```shell
-docker-compose run --rm -it php bash
-```
+
 Run test "benchmark-table"
 ```shell
 docker-compose run --rm -it php make benchmark-table
+```
+
+Run interactive shell
+```shell
+docker-compose run --rm -it php bash
 ```
 
 ### Local
