@@ -12,7 +12,7 @@ You can run these benchmarks yourself in two ways:
 
 In order to run it in a reproducible environment, build and run the docker image with
 ````shell
-docker-compose build --build-arg SERVICES=100
+docker-compose build
 ````
 
 Run test "benchmark-table"
