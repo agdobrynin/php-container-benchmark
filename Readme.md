@@ -10,7 +10,7 @@ You can run these benchmarks yourself in two ways:
 
 ### Docker
 
-In order to run it in a reproducible environment, build and run the docker image with
+In order to run it in a reproducible environment, build docker image with
 ````shell
 docker-compose build
 ````
