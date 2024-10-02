@@ -2,9 +2,6 @@ FROM composer:2
 FROM php:8.0-cli as base
 WORKDIR /var/www
 
-ENTRYPOINT ["make"]
-CMD ["prepare"]
-
 # Setup to install stuff
 COPY --from=composer:2 /usr/bin/composer /usr/bin/composer
 RUN apt-get update && apt-get -y install unzip libzip-dev make git \
@@ -27,3 +24,6 @@ USER dockeruser
 ARG SERVICES=100
 ENV SERVICES=${SERVICES}
 ENV APP_ENV=prod
+
+RUN make prepare
+
