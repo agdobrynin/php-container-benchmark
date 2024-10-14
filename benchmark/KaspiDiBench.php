@@ -6,7 +6,6 @@ namespace Benchmark;
 
 use Kaspi\DiContainer\DiContainer;
 use Kaspi\DiContainer\DiContainerConfig;
-use Kaspi\DiContainer\Autowired;
 use PhpBench\Attributes\Groups;
 use Project\Generated\Service6;
 use Project\Generated\ServiceImplementation;
@@ -31,10 +30,9 @@ class KaspiDiBench  extends AbstractContainer
         }
 
         $config = new DiContainerConfig(
-            autowire: new Autowired(false),
-            linkContainerSymbol: null,
-            delimiterAccessArrayNotationSymbol: null,
-            useZeroConfigurationDefinition: false
+            useZeroConfigurationDefinition: false,
+            useAttribute: false,
+            isSingletonServiceDefault: true,
         );
         $this->container = new DiContainer($definitions, $config);
     }

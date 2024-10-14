@@ -94,6 +94,10 @@ src/Generated:
 	cd src && mkdir -p Generated
 	php ./generate_services.php
 
+.PHONY: update-all
+
+update-all:  update-kaspi-di update-laminas update-league update-phpdi update-riaf update-symfony update-zen
+
 .PHONY: update-riaf
 update-riaf:
 	cd containers/riaf && composer update
