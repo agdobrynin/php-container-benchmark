@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "839440ddefac0c7c72cbee08e0c1480864024f5e"
+                "reference": "3610e8bd16469db2a3456b3509a30d446735f561"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/839440ddefac0c7c72cbee08e0c1480864024f5e",
-                "reference": "839440ddefac0c7c72cbee08e0c1480864024f5e",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/3610e8bd16469db2a3456b3509a30d446735f561",
+                "reference": "3610e8bd16469db2a3456b3509a30d446735f561",
                 "shasum": ""
             },
             "require": {
@@ -32,6 +32,9 @@
             "default-branch": true,
             "type": "library",
             "autoload": {
+                "files": [
+                    "src/DiContainer/function.php"
+                ],
                 "psr-4": {
                     "Kaspi\\DiContainer\\": "src/DiContainer/"
                 }
@@ -57,9 +60,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/v2.0.2"
+                "source": "https://github.com/agdobrynin/di-container/tree/main"
             },
-            "time": "2024-10-14T15:07:32+00:00"
+            "time": "2024-10-17T17:21:03+00:00"
         },
         {
             "name": "psr/container",
