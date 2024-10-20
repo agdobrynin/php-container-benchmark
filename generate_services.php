@@ -5,8 +5,11 @@ $max = $services - 1;
 
 for ($i = 0; $i < $services; $i++) {
     $name = "Service$i";
+    $required = 0;
 
-    $required = $i === $max ? null : $i + 1;
+    if ($required === $i) {
+        $required = null;
+    }
 
     ob_start();
     include "service_template.php";
