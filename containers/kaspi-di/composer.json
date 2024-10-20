@@ -1,6 +1,6 @@
 {
     "require": {
-        "kaspi/di-container": "dev-main"
+        "kaspi/di-container": "^2"
     },
     "autoload": {
         "psr-4": {
