@@ -1,0 +1,10 @@
+{
+    "require": {
+        "spiral/core": "^3.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "Project\\": "../../src/"
+        }
+    }
+}

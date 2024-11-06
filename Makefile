@@ -23,7 +23,9 @@ clean:
 	rm -rf containers/zen/vendor
 	rm -rf containers/zen/src/Container.php
 	rm -rf containers/kaspi-di/vendor
+	rm -rf containers/spiral/vendor
 
+.PHONY: vendor
 vendor:
 	composer install
 	cd containers/riaf && composer install
@@ -34,6 +36,7 @@ vendor:
 	cd containers/yii && composer install
 	cd containers/zen && composer install
 	cd containers/kaspi-di && composer install
+	cd containers/spiral && composer install
 
 .PHONY: autoloader
 autoloader:
@@ -49,6 +52,7 @@ integration-autoloaders:
 	cd containers/yii && composer dump-autoload -o -a
 	cd containers/zen && composer dump-autoload -o -a
 	cd containers/kaspi-di && composer dump-autoload -o -a
+	cd containers/spiral && composer dump-autoload -o -a
 
 .PHONY: benchmark
 benchmark:
@@ -96,7 +100,7 @@ src/Generated:
 
 .PHONY: update-all
 
-update-all:  update-kaspi-di update-laminas update-league update-phpdi update-riaf update-symfony update-zen
+update-all: update-spiral update-kaspi-di update-laminas update-league update-phpdi update-riaf update-symfony update-zen
 
 .PHONY: update-riaf
 update-riaf:
@@ -129,3 +133,7 @@ update-zen:
 .PHONY: update-kaspi-di
 update-kaspi-di:
 	cd containers/kaspi-di && composer update
+
+.PHONY: update-spiral
+update-spiral:
+	cd containers/spiral && composer update
