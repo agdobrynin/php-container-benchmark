@@ -10,7 +10,6 @@ use PhpBench\Attributes\Groups;
 use Project\Generated\Service6;
 use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
-use Spiral\Core\Config\Alias;
 use Spiral\Core\Container;
 
 #[Groups(["KaspiDiVsSpiral"])]
