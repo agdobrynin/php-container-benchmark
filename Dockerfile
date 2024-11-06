@@ -1,5 +1,5 @@
 FROM composer:2
-FROM php:8.0-cli as base
+FROM php:8.1-cli as base
 WORKDIR /var/www
 
 # Setup to install stuff

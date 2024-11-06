@@ -6,11 +6,14 @@ namespace Benchmark;
 
 require_once dirname(__DIR__) . '/containers/yii/vendor/autoload.php';
 
+use PhpBench\Attributes\Groups;
 use Project\Generated\Service6;
 use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
 use Yiisoft\Di\Container;
+use Yiisoft\Di\ContainerConfig;
 
+#[Groups(["KaspiDiVsYii"])]
 class YiiBench extends AbstractContainer
 {
     public function getContainer(): void
@@ -27,6 +30,9 @@ class YiiBench extends AbstractContainer
         $factories[ServiceImplementation::class] = ServiceImplementation::class;
         $factories['some_alias'] = Service6::class;
 
-        $this->container = new Container($factories);
+        $config = ContainerConfig::create()
+            ->withDefinitions($factories);
+
+        $this->container = new Container($config);
     }
 }

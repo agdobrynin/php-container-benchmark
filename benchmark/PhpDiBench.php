@@ -9,7 +9,7 @@ require_once dirname(__DIR__) . '/containers/php-di/vendor/autoload.php';
 use CompiledContainer;
 use PhpBench\Attributes\Groups;
 
-#[Groups(["Container", "ContainerBenchmark", "Compiled"])]
+#[Groups(["Container", "ContainerBenchmark", "Compiled", "KaspiDiVsPhpDi"])]
 class PhpDiBench extends AbstractContainer
 {
     public function getContainer(): void

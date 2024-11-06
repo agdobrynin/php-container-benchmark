@@ -13,7 +13,7 @@ use Project\Generated\ServiceInterface;
 
 require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
 
-#[Groups(["Container", "ContainerBenchmark", "Match"])]
+#[Groups(["Container", "ContainerBenchmark", "Match", "KaspiDi", "KaspiDiVsPhpDi", "KaspiDiVsYii"])]
 class KaspiDiBench  extends AbstractContainer
 {
 
