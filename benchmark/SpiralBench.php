@@ -31,7 +31,7 @@ class SpiralBench extends AbstractContainer
 
         $container->bindSingleton(ServiceImplementation::class, ServiceImplementation::class);
         $container->bindSingleton(ServiceInterface::class,ServiceImplementation::class);
-        $container->bind('some_alias', Service6::class);
+        $container->bindSingleton('some_alias', Service6::class);
 
         $this->container = $container;
     }
