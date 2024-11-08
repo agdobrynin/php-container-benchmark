@@ -13,7 +13,7 @@ use Project\Generated\ServiceInterface;
 use Yiisoft\Di\Container;
 use Yiisoft\Di\ContainerConfig;
 
-#[Groups(["KaspiDiVsYii"])]
+#[Groups(["Runtime"])]
 class YiiBench extends AbstractContainer
 {
     public function getContainer(): void

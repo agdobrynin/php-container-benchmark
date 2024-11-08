@@ -12,11 +12,7 @@ use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
 use Spiral\Core\Container;
 
-#[Groups([
-    "Container",
-    "ContainerBenchmark",
-    "KaspiDiVsSpiral"
-])]
+#[Groups(["Runtime"])]
 class SpiralBench extends AbstractContainer
 {
     public function getContainer(): void
