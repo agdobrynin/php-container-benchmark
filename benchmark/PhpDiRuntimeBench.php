@@ -10,9 +10,8 @@ use PhpBench\Attributes\Groups;
 use Project\Generated\Service6;
 use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
-use DI\Container;
 
-#[Groups(["Runtime", "PhpDiRuntime"])]
+#[Groups(["Runtime", "PhpDiRuntime", "KaspiDiVsPhpDi"])]
 class PhpDiRuntimeBench extends AbstractContainer
 {
     public function getContainer(): void
@@ -20,17 +19,17 @@ class PhpDiRuntimeBench extends AbstractContainer
         $dependencies = [];
         $services = !empty(getenv('SERVICES')) ? getenv('SERVICES') : 100;
 
+        $container = (new \DI\Container());
+
         for ($i = 0; $i < $services; $i++) {
-            $dependencies["Project\Generated\Service$i"] = "Project\Generated\Service$i";
+            $container->set("Project\Generated\Service$i", \DI\autowire());
         }
 
-        $dependencies[ServiceInterface::class] = ServiceImplementation::class;
-        $dependencies[ServiceImplementation::class] = ServiceImplementation::class;
-        $dependencies['some_alias'] = Service6::class;
+        $container->set(ServiceImplementation::class, \DI\autowire());
+        $container->set(ServiceInterface::class, \DI\get(ServiceImplementation::class));
+        $container->set('some_alias', \DI\get(Service6::class));
 
-        $this->container = (new \DI\ContainerBuilder())
-            ->addDefinitions($dependencies)
-            ->useAnnotations(false)
-            ->build();
+
+        $this->container = $container;
     }
 }

@@ -18,6 +18,7 @@ require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
     "ContainerBenchmark",
     "KaspiDi",
     "Runtime",
+    "KaspiDiVsPhpDi",
 ])]
 class KaspiDiBench  extends AbstractContainer
 {
