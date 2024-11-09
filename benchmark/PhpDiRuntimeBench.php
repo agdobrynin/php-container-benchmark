@@ -12,7 +12,7 @@ use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
 use DI\Container;
 
-#[Groups(["Runtime"])]
+#[Groups(["Runtime", "PhpDiRuntime"])]
 class PhpDiRuntimeBench extends AbstractContainer
 {
     public function getContainer(): void
