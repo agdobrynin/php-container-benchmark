@@ -12,7 +12,7 @@ require_once dirname(__DIR__, 2) . '/vendor/autoload.php';
 
 $builder = new ContainerBuilder();
 $builder->useAutowiring(true);
-$builder->useAnnotations(false);
+$builder->useAttributes(false);
 $builder->enableCompilation(__DIR__ . '/src');
 $builder->writeProxiesToFile(true, __DIR__ . '/src/Proxies');
 
