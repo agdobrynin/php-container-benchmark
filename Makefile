@@ -78,6 +78,10 @@ benchmark-match:
 benchmark-misc:
 	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=all --group=Misc
 
+PHONY: kaspi
+kaspi:
+	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=all --group=KaspiDi
+
 containers/riaf/src/Container.php:
 	cd containers/riaf && composer dump-autoload
 	cd containers/riaf && php vendor/bin/compile "\\Config"
