@@ -55,7 +55,7 @@ integration-autoloaders:
 	cd containers/spiral && composer dump-autoload -o -a
 
 .PHONY: autoloader-kaspi
-autoloader:
+autoloader-kaspi:
 	cd containers/kaspi-di && composer dump-autoload -o -a
 
 .PHONY: benchmark
