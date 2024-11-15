@@ -54,6 +54,10 @@ integration-autoloaders:
 	cd containers/kaspi-di && composer dump-autoload -o -a
 	cd containers/spiral && composer dump-autoload -o -a
 
+.PHONY: autoloader-kaspi
+autoloader:
+	cd containers/kaspi-di && composer dump-autoload -o -a
+
 .PHONY: benchmark
 benchmark:
 	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=aggregate
