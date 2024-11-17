@@ -35,7 +35,7 @@ vendor:
 	cd containers/laminas && composer install
 	cd containers/yii && composer install
 	cd containers/zen && composer install
-	cd containers/kaspi-di && composer install
+	cd containers/kaspi-di && composer install --no-dev
 	cd containers/spiral && composer install
 
 .PHONY: autoloader

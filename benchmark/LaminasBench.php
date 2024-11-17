@@ -13,7 +13,7 @@ use Project\Generated\Service6;
 use Project\Generated\ServiceImplementation;
 use Project\Generated\ServiceInterface;
 
-#[Groups(["Container", "ContainerBenchmark"])]
+#[Groups(["Container", "ContainerBenchmark", "Compiled"])]
 class LaminasBench extends AbstractContainer
 {
     public function getContainer(): void
