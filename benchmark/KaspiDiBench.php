@@ -7,9 +7,10 @@ namespace Benchmark;
 use Kaspi\DiContainer\DiContainer;
 use Kaspi\DiContainer\DiContainerConfig;
 use PhpBench\Attributes\Groups;
-use Project\Generated\Service6;
-use Project\Generated\ServiceImplementation;
+use function Kaspi\DiContainer\diAutowire;
 use Project\Generated\ServiceInterface;
+use Project\Generated\ServiceImplementation;
+use Project\Generated\Service6;
 
 require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
 
@@ -19,28 +20,30 @@ require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
     "KaspiDi",
     "Runtime",
     "KaspiDiVsPhpDi",
+    "Compiled",
 ])]
 class KaspiDiBench  extends AbstractContainer
 {
 
     public function getContainer(): void
     {
-        $definitions = [
-            ServiceImplementation::class => ServiceImplementation::class,
-            ServiceInterface::class => ServiceImplementation::class,
-            'some_alias' => Service6::class,
-        ];
         $services = !empty(getenv('SERVICES')) ? getenv('SERVICES') : 100;
-        for ($i = 0; $i < $services; $i++) {
-            $definitions["Project\Generated\Service$i"] = "Project\Generated\Service$i";
-        }
+
+        $definitions = static function () use ($services): \Generator {
+            for ($i = 0; $i < $services; $i++) {
+                yield diAutowire("Project\\Generated\\Service$i");
+            }
+            yield diAutowire(ServiceImplementation::class);
+            yield 'some_alias' => diAutowire(Service6::class);
+            yield ServiceInterface::class => diAutowire(ServiceImplementation::class);
+        };
 
         $config = new DiContainerConfig(
             useAutowire: true,
-            useZeroConfigurationDefinition: false,
+            useZeroConfigurationDefinition: true,
             useAttribute: false,
             isSingletonServiceDefault: true,
         );
-        $this->container = new DiContainer($definitions, $config);
+        $this->container = new DiContainer($definitions(), $config);
     }
 }
