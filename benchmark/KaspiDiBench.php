@@ -11,7 +11,7 @@ use function Kaspi\DiContainer\diAutowire;
 use Project\Generated\ServiceInterface;
 use Project\Generated\ServiceImplementation;
 use Project\Generated\Service6;
-use function Kaspi\DiContainer\diReference;
+use function Kaspi\DiContainer\diGet;
 
 require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
 
@@ -35,8 +35,8 @@ class KaspiDiBench  extends AbstractContainer
                 yield diAutowire("Project\\Generated\\Service$i");
             }
             yield diAutowire(ServiceImplementation::class);
-            yield 'some_alias' => diReference(Service6::class);
-            yield ServiceInterface::class => diReference(ServiceImplementation::class);
+            yield 'some_alias' => diGet(Service6::class);
+            yield ServiceInterface::class => diGet(ServiceImplementation::class);
         };
 
         $config = new DiContainerConfig(
