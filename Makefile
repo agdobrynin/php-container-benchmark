@@ -27,7 +27,7 @@ clean:
 
 .PHONY: vendor
 vendor:
-	composer install
+	composer install --no-dev
 	cd containers/riaf && composer install --no-dev
 	cd containers/symfony && composer install --no-dev
 	cd containers/php-di && composer install --no-dev
