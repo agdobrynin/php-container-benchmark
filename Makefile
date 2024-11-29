@@ -28,15 +28,15 @@ clean:
 .PHONY: vendor
 vendor:
 	composer install
-	cd containers/riaf && composer install
-	cd containers/symfony && composer install
-	cd containers/php-di && composer install
-	cd containers/league && composer install
-	cd containers/laminas && composer install
-	cd containers/yii && composer install
-	cd containers/zen && composer install
+	cd containers/riaf && composer install --no-dev
+	cd containers/symfony && composer install --no-dev
+	cd containers/php-di && composer install --no-dev
+	cd containers/league && composer install --no-dev
+	cd containers/laminas && composer install --no-dev
+	cd containers/yii && composer install --no-dev
+	cd containers/zen && composer install --no-dev
 	cd containers/kaspi-di && composer install --no-dev
-	cd containers/spiral && composer install
+	cd containers/spiral && composer install --no-dev
 
 .PHONY: autoloader
 autoloader:

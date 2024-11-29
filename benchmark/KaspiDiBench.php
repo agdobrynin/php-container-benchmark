@@ -39,8 +39,7 @@ class KaspiDiBench  extends AbstractContainer
         };
 
         $config = new DiContainerConfig(
-            useAutowire: true,
-            useZeroConfigurationDefinition: true,
+            useZeroConfigurationDefinition: false,
             useAttribute: false,
             isSingletonServiceDefault: true,
         );

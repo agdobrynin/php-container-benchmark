@@ -1,6 +1,6 @@
 {
     "require": {
-        "kaspi/di-container": "^2"
+        "kaspi/di-container": "^3"
     },
     "autoload": {
         "psr-4": {
