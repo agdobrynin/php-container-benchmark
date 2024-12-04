@@ -31,7 +31,8 @@ class YiiBench extends AbstractContainer
         $factories['some_alias'] = Service6::class;
 
         $config = ContainerConfig::create()
-            ->withDefinitions($factories);
+            ->withDefinitions($factories)
+            ->withValidate(false);
 
         $this->container = new Container($config);
     }
