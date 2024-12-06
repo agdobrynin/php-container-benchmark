@@ -116,36 +116,36 @@ update-all: update-spiral update-kaspi-di update-laminas update-league update-ph
 
 .PHONY: update-riaf
 update-riaf:
-	cd containers/riaf && composer update && composer dump-autoload -o -a
+	cd containers/riaf && composer update
 
 .PHONY: update-symfony
 update-symfony:
-	cd containers/symfony && composer update && composer dump-autoload -o -a
+	cd containers/symfony && composer update
 
 .PHONY: update-phpdi
 update-phpdi:
-	cd containers/php-di && composer update && composer dump-autoload -o -a
+	cd containers/php-di && composer update
 
 .PHONY: update-league
 update-league:
-	cd containers/league && composer update && composer dump-autoload -o -a
+	cd containers/league && composer update
 
 .PHONY: update-laminas
 update-laminas:
-	cd containers/laminas && composer update && composer dump-autoload -o -a
+	cd containers/laminas && composer update
 
 .PHONY: update-yii
 update-yii:
-	cd containers/yii && composer update && composer dump-autoload -o -a
+	cd containers/yii && composer update
 
 .PHONY: update-zen
 update-zen:
-	cd containers/zen && composer update && composer dump-autoload -o -a
+	cd containers/zen && composer update
 
 .PHONY: update-kaspi-di
 update-kaspi-di:
-	cd containers/kaspi-di && composer update && composer dump-autoload -o -a
+	cd containers/kaspi-di && composer update
 
 .PHONY: update-spiral
 update-spiral:
-	cd containers/spiral && composer update && composer dump-autoload -o -a
+	cd containers/spiral && composer update
