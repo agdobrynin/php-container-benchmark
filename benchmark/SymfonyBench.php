@@ -9,7 +9,7 @@ require_once dirname(__DIR__) . '/containers/symfony/vendor/autoload.php';
 use PhpBench\Attributes\Groups;
 use Symfony\SymfonyContainer;
 
-#[Groups(["Container", "ContainerBenchmark", "Compiled"])]
+#[Groups(["Container", "ContainerBenchmark", "Compiled", "Symfony"])]
 class SymfonyBench extends AbstractContainer
 {
     public function getContainer(): void
