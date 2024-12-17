@@ -111,22 +111,22 @@
         },
         {
             "name": "spiral/core",
-            "version": "3.14.7",
+            "version": "3.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/core.git",
-                "reference": "4b3581a8878feb75489de7d1bb262d11c53f1d1b"
+                "reference": "e83d25752104f376f5b46e52fdcfdfa7f353ec72"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/core/zipball/4b3581a8878feb75489de7d1bb262d11c53f1d1b",
-                "reference": "4b3581a8878feb75489de7d1bb262d11c53f1d1b",
+                "url": "https://api.github.com/repos/spiral/core/zipball/e83d25752104f376f5b46e52fdcfdfa7f353ec72",
+                "reference": "e83d25752104f376f5b46e52fdcfdfa7f353ec72",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "psr/container": "^1.1|^2.0",
-                "spiral/security": "^3.14.7"
+                "spiral/security": "^3.14.8"
             },
             "provide": {
                 "psr/container-implementation": "^1.1|^2.0"
@@ -181,27 +181,27 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-25T20:19:44+00:00"
+            "time": "2024-12-11T19:42:35+00:00"
         },
         {
             "name": "spiral/hmvc",
-            "version": "3.14.7",
+            "version": "3.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/hmvc.git",
-                "reference": "6979712ee2dfd1493e16f23b6c3b3c92a78bcf9b"
+                "reference": "63de94a5bcb30a748f9338b5c3a480ea1daffcf1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/hmvc/zipball/6979712ee2dfd1493e16f23b6c3b3c92a78bcf9b",
-                "reference": "6979712ee2dfd1493e16f23b6c3b3c92a78bcf9b",
+                "url": "https://api.github.com/repos/spiral/hmvc/zipball/63de94a5bcb30a748f9338b5c3a480ea1daffcf1",
+                "reference": "63de94a5bcb30a748f9338b5c3a480ea1daffcf1",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "psr/event-dispatcher": "^1.0",
-                "spiral/core": "^3.14.7",
-                "spiral/interceptors": "^3.14.7"
+                "spiral/core": "^3.14.8",
+                "spiral/interceptors": "^3.14.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.1",
@@ -255,26 +255,26 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-25T20:19:45+00:00"
+            "time": "2024-12-11T19:42:49+00:00"
         },
         {
             "name": "spiral/interceptors",
-            "version": "3.14.7",
+            "version": "3.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/interceptors.git",
-                "reference": "3e65a56f0e0a3ab142da1ce0ac12a0bdfbd21611"
+                "reference": "6a749e69bf7b9fd8cd0e856a52a59ed6a775c753"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/interceptors/zipball/3e65a56f0e0a3ab142da1ce0ac12a0bdfbd21611",
-                "reference": "3e65a56f0e0a3ab142da1ce0ac12a0bdfbd21611",
+                "url": "https://api.github.com/repos/spiral/interceptors/zipball/6a749e69bf7b9fd8cd0e856a52a59ed6a775c753",
+                "reference": "6a749e69bf7b9fd8cd0e856a52a59ed6a775c753",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
                 "psr/event-dispatcher": "^1.0",
-                "spiral/core": "^3.14.7"
+                "spiral/core": "^3.14.8"
             },
             "require-dev": {
                 "phpunit/phpunit": "^10.1",
@@ -333,31 +333,31 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-25T20:19:45+00:00"
+            "time": "2024-12-11T19:42:51+00:00"
         },
         {
             "name": "spiral/security",
-            "version": "3.14.7",
+            "version": "3.14.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/spiral/security.git",
-                "reference": "7e663f8a0392f3a205a5ed052f7b611f3061fb22"
+                "reference": "de9dfa79a2d3e243f43777bf39310d7c164f7a6b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/spiral/security/zipball/7e663f8a0392f3a205a5ed052f7b611f3061fb22",
-                "reference": "7e663f8a0392f3a205a5ed052f7b611f3061fb22",
+                "url": "https://api.github.com/repos/spiral/security/zipball/de9dfa79a2d3e243f43777bf39310d7c164f7a6b",
+                "reference": "de9dfa79a2d3e243f43777bf39310d7c164f7a6b",
                 "shasum": ""
             },
             "require": {
                 "php": ">=8.1",
-                "spiral/core": "^3.14.7",
-                "spiral/hmvc": "^3.14.7"
+                "spiral/core": "^3.14.8",
+                "spiral/hmvc": "^3.14.8"
             },
             "require-dev": {
                 "mockery/mockery": "^1.5",
                 "phpunit/phpunit": "^10.1",
-                "spiral/console": "^3.14.7",
+                "spiral/console": "^3.14.8",
                 "vimeo/psalm": "^5.9"
             },
             "type": "library",
@@ -405,7 +405,7 @@
                     "type": "github"
                 }
             ],
-            "time": "2024-11-25T20:20:17+00:00"
+            "time": "2024-12-11T19:43:15+00:00"
         }
     ],
     "packages-dev": [],
