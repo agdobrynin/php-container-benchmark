@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "930edd25e187da5c6e49a1f0b99bface",
+    "content-hash": "8b35154544c46d91a05e8bb2e11e1818",
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v3.7.0",
+            "version": "v3.8.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "5f0c3d685f5341802563ce85830d2ed3b858bdaa"
+                "reference": "d4aad631b71d28b322fe677b744d27de3c087109"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/5f0c3d685f5341802563ce85830d2ed3b858bdaa",
-                "reference": "5f0c3d685f5341802563ce85830d2ed3b858bdaa",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/d4aad631b71d28b322fe677b744d27de3c087109",
+                "reference": "d4aad631b71d28b322fe677b744d27de3c087109",
                 "shasum": ""
             },
             "require": {
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/v3.7.0"
+                "source": "https://github.com/agdobrynin/di-container/tree/v3.8.0"
             },
-            "time": "2024-12-21T10:30:45+00:00"
+            "time": "2025-02-03T10:51:31+00:00"
         },
         {
             "name": "psr/container",
