@@ -8,20 +8,20 @@
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v3.8.0",
+            "version": "v3.9.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "d4aad631b71d28b322fe677b744d27de3c087109"
+                "reference": "94fca259166b0e410b50d618cee9bd4d79abb628"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/d4aad631b71d28b322fe677b744d27de3c087109",
-                "reference": "d4aad631b71d28b322fe677b744d27de3c087109",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/94fca259166b0e410b50d618cee9bd4d79abb628",
+                "reference": "94fca259166b0e410b50d618cee9bd4d79abb628",
                 "shasum": ""
             },
             "require": {
-                "php": "^8.0 || ^8.1 || ^8.2 || ^8.3",
+                "php": "^8.0 || ^8.1 || ^8.2 || ^8.3 || ^8.4",
                 "psr/container": "^2.0"
             },
             "require-dev": {
@@ -59,9 +59,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/v3.8.0"
+                "source": "https://github.com/agdobrynin/di-container/tree/v3.9.0"
             },
-            "time": "2025-02-03T10:51:31+00:00"
+            "time": "2025-02-10T14:23:47+00:00"
         },
         {
             "name": "psr/container",
