@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v3.9.3",
+            "version": "v3.10.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "cda8a883adc739fd0e949590c9a5b532526c1d3a"
+                "reference": "088af099ec012cd8d5d85655f29bb3c6df02496e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/cda8a883adc739fd0e949590c9a5b532526c1d3a",
-                "reference": "cda8a883adc739fd0e949590c9a5b532526c1d3a",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/088af099ec012cd8d5d85655f29bb3c6df02496e",
+                "reference": "088af099ec012cd8d5d85655f29bb3c6df02496e",
                 "shasum": ""
             },
             "require": {
@@ -27,6 +27,7 @@
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.41",
                 "phpstan/phpstan": "^2.1",
+                "phpstan/phpstan-strict-rules": "^2.0",
                 "phpunit/phpunit": "^9.6"
             },
             "type": "library",
@@ -59,9 +60,9 @@
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
-                "source": "https://github.com/agdobrynin/di-container/tree/v3.9.3"
+                "source": "https://github.com/agdobrynin/di-container/tree/v3.10.0"
             },
-            "time": "2025-02-20T08:17:53+00:00"
+            "time": "2025-02-21T09:25:26+00:00"
         },
         {
             "name": "psr/container",
