@@ -4,7 +4,7 @@ all: prepare benchmark-table
 prepare: clean vendor src/Generated generate_containers autoloader integration-autoloaders
 
 .PHONY: generate_containers
-generate_containers: containers/riaf/src/Container.php containers/symfony/src/SymfonyContainer.php containers/php-di/src/CompiledContainer.php containers/zen/src/Container.php
+generate_containers: kaspi-di-definitions_cache containers/riaf/src/Container.php containers/symfony/src/SymfonyContainer.php containers/php-di/src/CompiledContainer.php containers/zen/src/Container.php
 
 .PHONY: clean
 clean:
@@ -23,6 +23,7 @@ clean:
 	rm -rf containers/zen/vendor
 	rm -rf containers/zen/src/Container.php
 	rm -rf containers/kaspi-di/vendor
+	rm -f containers/kaspi-di/var/*.php
 	rm -rf containers/spiral/vendor
 
 .PHONY: vendor
@@ -109,6 +110,11 @@ containers/zen/src/Container.php:
 src/Generated:
 	cd src && mkdir -p Generated
 	php ./generate_services.php
+
+kaspi-di-definitions_cache:
+	cd containers/kaspi-di && composer dump-autoload
+	cd containers/kaspi-di && php ./definitions_cache.php
+
 
 .PHONY: update-all
 

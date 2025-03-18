@@ -7,3 +7,5 @@ containers/symfony/src/SymfonyContainer.php
 containers/php-di/src/CompiledContainer.php
 .idea
 /containers/laminas/src/autowire.cache.php
+containers/kaspi-di/var
+!containers/kaspi-di/var/.gitkeep
