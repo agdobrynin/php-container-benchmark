@@ -1,5 +1,9 @@
 <?php
-
 declare(strict_types=1);
 
-iterator_to_array(require 'definitions_loader.php');
+/** @var \Generator $definitions */
+$definitions = require __DIR__ . '/definitions_loader.php';
+
+while ($definitions->valid()) {
+    $definitions->next();
+}
