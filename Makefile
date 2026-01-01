@@ -118,7 +118,7 @@ kaspi-di-definitions_cache:
 
 .PHONY: update-all
 
-update-all: update-spiral update-kaspi-di update-laminas update-league update-phpdi update-riaf update-symfony update-zen
+update-all: update-yii update-spiral update-kaspi-di update-laminas update-league update-phpdi update-riaf update-symfony update-zen
 
 .PHONY: update-riaf
 update-riaf:
