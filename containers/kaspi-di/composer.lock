@@ -4,33 +4,37 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "8b35154544c46d91a05e8bb2e11e1818",
+    "content-hash": "c7e4deb0bfd354858b8218e3b3a4ddf6",
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v3.15.0",
+            "version": "v4.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "bda7969e4e4e47d43000f9009caf0379983b3a7a"
+                "reference": "26aa670f04cd736a058de3315a1527c9dba60a8a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/bda7969e4e4e47d43000f9009caf0379983b3a7a",
-                "reference": "bda7969e4e4e47d43000f9009caf0379983b3a7a",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/26aa670f04cd736a058de3315a1527c9dba60a8a",
+                "reference": "26aa670f04cd736a058de3315a1527c9dba60a8a",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^8.0 || ^8.1 || ^8.2 || ^8.3 || ^8.4",
+                "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
                 "psr/container": "^2.0"
+            },
+            "provide": {
+                "psr/container-implementation": "^2.0"
             },
             "require-dev": {
                 "friendsofphp/php-cs-fixer": "^3.41",
                 "mikey179/vfsstream": "^1.6",
                 "phpstan/phpstan": "^2.1",
                 "phpstan/phpstan-strict-rules": "^2.0",
-                "phpunit/phpunit": "^9.6"
+                "phpunit/phpunit": "^10",
+                "rector/rector": "^2.3"
             },
             "type": "library",
             "autoload": {
@@ -58,13 +62,14 @@
                 "PSR-11",
                 "autowire",
                 "container",
+                "dependency injection",
                 "di"
             ],
             "support": {
                 "issues": "https://github.com/agdobrynin/di-container/issues",
                 "source": "https://github.com/agdobrynin/di-container/tree/main"
             },
-            "time": "2025-11-01T10:17:16+00:00"
+            "time": "2026-01-22T07:36:50+00:00"
         },
         {
             "name": "psr/container",

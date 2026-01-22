@@ -4,19 +4,20 @@ declare(strict_types=1);
 
 namespace Benchmark;
 
+use Kaspi\DiContainer\DefinitionsLoader;
 use Kaspi\DiContainer\DiContainerBuilder;
 use Kaspi\DiContainer\DiContainerConfig;
 use PhpBench\Attributes\Groups;
 
 require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
 
-#[Groups(["Container", "ContainerBenchmark", "KaspiDiCompile", "Compiled", "KaspiDi"])]
-class KaspiDiBench extends AbstractContainer
+#[Groups(["Runtime", "KaspiDi"])]
+class KaspiDiRuntimeBench extends AbstractContainer
 {
     public function getContainer(): void
     {
         $config = new DiContainerConfig(
-            useZeroConfigurationDefinition: false,
+            useZeroConfigurationDefinition: true,
             useAttribute: false,
             isSingletonServiceDefault: true,
         );
@@ -24,9 +25,7 @@ class KaspiDiBench extends AbstractContainer
         $this->container = (new DiContainerBuilder($config))
             ->import('Project\\', __DIR__.'/../src')
             ->load(__DIR__.'/../containers/kaspi-di/services.php')
-            ->compileToFile(__DIR__.'/../containers/kaspi-di/src', 'KaspiDi\\Container')
             ->build()
         ;
-
     }
 }
