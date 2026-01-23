@@ -8,7 +8,7 @@ use PhpBench\Attributes\Groups;
 
 require_once dirname(__DIR__) . '/containers/kaspi-di/vendor/autoload.php';
 
-#[Groups(["Container", "ContainerBenchmark", "KaspiDiCompile", "Compiled", "KaspiDi"])]
+#[Groups(["Container", "ContainerBenchmark", "KaspiDiCompile", "Compiled", "KaspiDi", "KaspiDiCompiled"])]
 class KaspiDiBench extends AbstractContainer
 {
     public function getContainer(): void
