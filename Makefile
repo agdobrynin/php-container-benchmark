@@ -4,7 +4,7 @@ all: prepare benchmark-table
 prepare: clean vendor src/Generated generate_containers autoloader integration-autoloaders
 
 .PHONY: generate_containers
-generate_containers: containers/riaf/src/Container.php containers/symfony/src/SymfonyContainer.php containers/php-di/src/CompiledContainer.php containers/zen/src/Container.php
+generate_containers: compile_container_kaspi_di containers/riaf/src/Container.php containers/symfony/src/SymfonyContainer.php containers/php-di/src/CompiledContainer.php containers/zen/src/Container.php
 
 .PHONY: clean
 clean:
@@ -23,7 +23,6 @@ clean:
 	rm -rf containers/zen/vendor
 	rm -rf containers/zen/src/Container.php
 	rm -rf containers/kaspi-di/vendor
-	rm -f containers/kaspi-di/src/*.php
 	rm -rf containers/spiral/vendor
 
 .PHONY: vendor
@@ -90,6 +89,10 @@ kaspi:
 PHONY: runtime
 runtime:
 	php -d memory_limit=4096M vendor/bin/phpbench run benchmark --report=all --group=Runtime
+
+compile_container_kaspi_di:
+	cd containers/kaspi-di/src && rm -f Container.php
+	cd containers/kaspi-di && php ./compile_container.php
 
 containers/riaf/src/Container.php:
 	cd containers/riaf && composer dump-autoload
