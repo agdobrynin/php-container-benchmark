@@ -8,16 +8,16 @@
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v4.0.1",
+            "version": "v4.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "e1a61ce5e255eae2fa1a61443573541482cfa85c"
+                "reference": "c8cc5d959a223799aa7a02cf2322ebbb6b09c80d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/e1a61ce5e255eae2fa1a61443573541482cfa85c",
-                "reference": "e1a61ce5e255eae2fa1a61443573541482cfa85c",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/c8cc5d959a223799aa7a02cf2322ebbb6b09c80d",
+                "reference": "c8cc5d959a223799aa7a02cf2322ebbb6b09c80d",
                 "shasum": ""
             },
             "require": {
@@ -69,7 +69,7 @@
                 "issues": "https://github.com/agdobrynin/di-container/issues",
                 "source": "https://github.com/agdobrynin/di-container/tree/main"
             },
-            "time": "2026-01-23T11:41:59+00:00"
+            "time": "2026-01-27T13:33:18+00:00"
         },
         {
             "name": "psr/container",
