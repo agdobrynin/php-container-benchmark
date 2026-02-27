@@ -8,33 +8,33 @@
     "packages": [
         {
             "name": "kaspi/di-container",
-            "version": "v4.0.5",
+            "version": "v4.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/agdobrynin/di-container.git",
-                "reference": "f9c454dc540627c34f2cbd0162e1f05bea07ccd5"
+                "reference": "98c0814ec0251efc28a7d3ec76abdd7fc44c0615"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/f9c454dc540627c34f2cbd0162e1f05bea07ccd5",
-                "reference": "f9c454dc540627c34f2cbd0162e1f05bea07ccd5",
+                "url": "https://api.github.com/repos/agdobrynin/di-container/zipball/98c0814ec0251efc28a7d3ec76abdd7fc44c0615",
+                "reference": "98c0814ec0251efc28a7d3ec76abdd7fc44c0615",
                 "shasum": ""
             },
             "require": {
                 "ext-tokenizer": "*",
-                "php": "^8.1 || ^8.2 || ^8.3 || ^8.4",
+                "php": "^8.1 || ^8.2 || ^8.3 || ^8.4 || ^8.5",
                 "psr/container": "^2.0"
             },
             "provide": {
                 "psr/container-implementation": "^2.0"
             },
             "require-dev": {
-                "friendsofphp/php-cs-fixer": "^3.41",
-                "mikey179/vfsstream": "^1.6",
-                "phpstan/phpstan": "^2.1",
-                "phpstan/phpstan-strict-rules": "^2.0",
-                "phpunit/phpunit": "^10",
-                "rector/rector": "^2.3"
+                "friendsofphp/php-cs-fixer": "3.94.2",
+                "mikey179/vfsstream": "1.6.12",
+                "phpstan/phpstan": "2.1.40",
+                "phpstan/phpstan-strict-rules": "2.0.10",
+                "phpunit/phpunit": "10.5.63",
+                "rector/rector": "2.3.8"
             },
             "type": "library",
             "autoload": {
@@ -69,7 +69,7 @@
                 "issues": "https://github.com/agdobrynin/di-container/issues",
                 "source": "https://github.com/agdobrynin/di-container/tree/main"
             },
-            "time": "2026-02-05T08:01:42+00:00"
+            "time": "2026-02-27T07:55:20+00:00"
         },
         {
             "name": "psr/container",
